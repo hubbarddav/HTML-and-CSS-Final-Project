@@ -1,0 +1,162 @@
+/*  rgb(124, 197, 240)
+    rgb(252, 252, 252)
+    rgb(54, 113, 168)
+    rgb(215, 233, 250)
+*/
+.pulse{
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+	0% {color: lightblue; text-shadow: 1px 1px black;}
+	50% {color:#0C178F; text-shadow: 10px 10px 2px lemonchiffon;}
+	100% {color: skyblue; text-shadow: 1px 1px darkgray;}
+}
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size:1.4em;
+	background:rgb(124, 197, 240);
+}
+nav {
+	width:100%;
+	height:auto;
+    background-color:rgb(124, 197, 240);
+    text-align:left;
+    clear:both;
+    float:left;  
+    font-size:2vmax;
+}
+nav a {
+    text-decoration:none;
+}
+nav ul li {
+	list-style:none;
+	margin-left:-35px;
+	border-bottom:gray 3px solid;
+	border-left:gray 3px solid;
+	text-align:center;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background-color:rgb(252, 252, 252);
+    color:rgb(54, 113, 168);
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background-color:rgb(54, 113, 168);
+    color:white;
+}
+a:link, a:visited, a:hover,a:active{
+	color:rgb(54, 113, 168);
+	text-shadow:1px 1px black;
+}
+header{
+	width:100%;
+	margin-top:0%;
+	background-color: rgb(54, 113, 168);
+	padding:10px;
+	box-shadow:3px 3px #555;
+	font-size:1.5em;  
+}
+h1{
+	color:rgb(175, 212, 236);
+    text-shadow:3px 3px gray;	
+    text-align:center;
+    font-size:3vmax;
+}
+h2{
+	color:rgb(223, 232, 238);
+    text-shadow:3px 3px gray;	
+    text-align:center;
+    font-size:2vmax;
+}
+
+section{
+	background:rgb(215, 233, 250);
+}
+aside {
+    background: rgb(124, 197, 240);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+footer {
+    background:rgb(124, 197, 240);
+    color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    padding: 15px;
+}
+img{
+	box-shadow:2px 2px #555;
+}
+.indent{
+	text-indent:40px;
+}
+.center{
+	margin-right:auto;
+	margin-left:auto;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: skyblue;
+    overflow: auto; /* Overflow due to float */
+}
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color:black; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+.icon-bar a:hover {
+    background-color:skyblue; /* Add a hover color */
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;  
+    float:left;   
+    padding:15px;   
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}
+	
